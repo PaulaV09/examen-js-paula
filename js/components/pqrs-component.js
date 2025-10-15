@@ -32,10 +32,19 @@ export class PqrsComponent extends HTMLElement {
 
   setupEventListeners() {
 
-    const btnEnviar = this.shadowRoot.querySelector(".btn-enviar");
+    const btnEnviar = this.shadowRoot.querySelector("#enviar");
     if (btnEnviar) {
       btnEnviar.addEventListener("click", () => this.handlePqrs());
     }
+
+    const btnELiminar = this.shadowRoot.querySelector("#eliminar");
+    if (btnELiminar) {
+        const confirmDelete = confirm(
+          "¿Seguro que deseas cancelar esta PQRs?"
+        );
+        if (!confirmDelete) return;
+        deleteInfo("bookings", id);
+      }
   }
 
 async handlePqrs() {
@@ -111,7 +120,7 @@ async handlePqrs() {
             Descripcion de la PQRs
         </h3>
         <input type="text" name="" id="descripcion">
-        <button>Enviar</button>  
+        <button id="enviar">Enviar</button>  
       </section>
 
       <section class="mis-reservas-container fade-in">
@@ -158,6 +167,7 @@ async handlePqrs() {
               <p><strong>Fecha de radicacion:</strong> $${pqrs.fecha}</p>
               <p><strong>Estado:</strong> $${pqrs.estado}</p>
               <p><strong>Respuesta:</strong> $${pqrs.respuesta}</p>
+              <button id="eliminar">Eliminar</button> 
             </div>
           </div>
         `;
