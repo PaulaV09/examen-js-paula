@@ -8,3 +8,5 @@ import "../js/components/mis-reservas-component.js";
 import "../js/components/perfil-component.js";
 import "../js/components/gsRooms-component.js";
 import "../js/components/gsBookings-component.js";
+import "../js/components/gsPqrs-component.js";
+import "../js/components/pqrs-component.js";
