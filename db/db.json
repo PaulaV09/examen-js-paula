@@ -174,5 +174,6 @@
       "status": "cancelada",
       "createdAt": "2025-07-15T15:00:00Z"
     }
-  ]
+  ],
+  "pqrs": []
 }
