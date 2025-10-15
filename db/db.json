@@ -1,0 +1,178 @@
+{
+  "users": [
+    {
+      "identificacion": "100100100",
+      "fullName": "Admin Hotel",
+      "nacionalidad": "Colombiana",
+      "email": "admin@hotel.com",
+      "telefono": "+57 310 111 1111",
+      "password": "admin123",
+      "role": "admin",
+      "id": 1
+    },
+    {
+      "identificacion": "200200200",
+      "fullName": "Paula Viviescas",
+      "nacionalidad": "Colombiana",
+      "email": "paula@example.com",
+      "telefono": "+57 300 222 2222",
+      "password": "paula123",
+      "role": "user",
+      "id": 2
+    },
+    {
+      "identificacion": "300300300",
+      "fullName": "Lamine García",
+      "nacionalidad": "Colombiana",
+      "email": "lamine@example.com",
+      "telefono": "+57 301 333 3333",
+      "password": "lamine123",
+      "role": "user",
+      "id": 3
+    }
+  ],
+
+  "rooms": [
+    {
+      "id": 1,
+      "title": "Habitación Estándar Vista Jardín",
+      "slug": "habitacion-estandar-vista-jardin",
+      "description": "Acogedora habitación con vista al jardín, ideal para estancias cortas con todas las comodidades esenciales.",
+      "beds": "1 cama doble",
+      "maxGuests": 2,
+      "pricePerNight": 180000,
+      "services": [
+        "WiFi gratuito",
+        "Baño privado",
+        "TV por cable",
+        "Ventilador"
+      ],
+      "images": [
+        "https://i.ibb.co/4zGftW5/image.png",
+        "https://i.ibb.co/JRZCm0pV/image.png",
+        "https://i.ibb.co/whY4yN4y/image.png",
+        "https://i.ibb.co/5hhGYX7N/image.png"
+      ],
+      "active": true
+    },
+    {
+      "id": 2,
+      "title": "Habitación Deluxe Panorámica",
+      "slug": "habitacion-deluxe-panoramica",
+      "description": "Elegante habitación con amplios ventanales y diseño moderno. Ideal para quienes buscan confort y estilo.",
+      "beds": "1 cama queen",
+      "maxGuests": 2,
+      "pricePerNight": 250000,
+      "services": [
+        "WiFi gratuito",
+        "Minibar",
+        "Aire acondicionado",
+        "Baño privado"
+      ],
+      "images": [
+        "https://i.ibb.co/DDcgKfCQ/image.png",
+        "https://i.ibb.co/TqcWLDB1/image.png",
+        "https://i.ibb.co/whKjTgqX/image.png",
+        "https://i.ibb.co/NdD50H4j/image.png"
+      ],
+      "active": true
+    },
+    {
+      "id": 3,
+      "title": "Suite Familiar",
+      "slug": "suite-familiar",
+      "description": "Amplia suite con sala de estar y dos habitaciones, perfecta para familias que buscan comodidad y privacidad.",
+      "beds": "2 camas dobles",
+      "maxGuests": 4,
+      "pricePerNight": 320000,
+      "services": [
+        "WiFi gratuito",
+        "Balcón privado",
+        "Desayuno incluido",
+        "Televisión por cable"
+      ],
+      "images": [
+        "https://i.ibb.co/tPTM95c6/image.png",
+        "https://i.ibb.co/GNKDcp5/image.png",
+        "https://i.ibb.co/20NvRbsf/image.png",
+        "https://i.ibb.co/S4PrfWRc/image.png"
+      ],
+      "active": true
+    },
+    {
+      "id": 4,
+      "title": "Habitación Presidencial Royal",
+      "slug": "habitacion-presidencial-royal",
+      "description": "Lujo, amplitud y elegancia en una habitación diseñada para experiencias inolvidables con vistas panorámicas.",
+      "beds": "1 cama king y 1 cama doble",
+      "maxGuests": 4,
+      "pricePerNight": 500000,
+      "services": ["Jacuzzi", "Terraza privada", "Bar interno", "Servicio 24h"],
+      "images": [
+        "https://i.ibb.co/99KK8W4M/image.png",
+        "https://i.ibb.co/ZRKWJRwm/image.png",
+        "https://i.ibb.co/k2hJkdLZ/image.png",
+        "https://i.ibb.co/ksN6GwdQ/image.png"
+      ],
+      "active": true
+    }
+  ],
+
+  "bookings": [
+    {
+      "id": 1,
+      "roomId": 3,
+      "userId": 2,
+      "startDate": "2025-11-10",
+      "endDate": "2025-11-13",
+      "guests": 2,
+      "totalPrice": 750000,
+      "status": "confirmada",
+      "createdAt": "2025-10-05T10:00:00Z"
+    },
+    {
+      "id": 2,
+      "roomId": 6,
+      "userId": 3,
+      "startDate": "2025-12-01",
+      "endDate": "2025-12-05",
+      "guests": 2,
+      "totalPrice": 1520000,
+      "status": "pendiente",
+      "createdAt": "2025-10-06T12:00:00Z"
+    },
+    {
+      "id": 3,
+      "roomId": 2,
+      "userId": 2,
+      "startDate": "2025-11-25",
+      "endDate": "2025-11-28",
+      "guests": 2,
+      "totalPrice": 540000,
+      "status": "confirmada",
+      "createdAt": "2025-10-02T09:00:00Z"
+    },
+    {
+      "id": 4,
+      "roomId": 7,
+      "userId": 3,
+      "startDate": "2025-12-15",
+      "endDate": "2025-12-18",
+      "guests": 3,
+      "totalPrice": 1500000,
+      "status": "pendiente",
+      "createdAt": "2025-10-03T08:00:00Z"
+    },
+    {
+      "id": 5,
+      "roomId": 5,
+      "userId": 2,
+      "startDate": "2025-08-01",
+      "endDate": "2025-08-03",
+      "guests": 4,
+      "totalPrice": 640000,
+      "status": "cancelada",
+      "createdAt": "2025-07-15T15:00:00Z"
+    }
+  ]
+}

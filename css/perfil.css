@@ -1,0 +1,131 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  background-color: #f9f9f9;
+  min-height: 90vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.profile-card {
+  background-color: #eae7b1;
+  padding: 2rem 2.5rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.avatar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.avatar-circle {
+  background-color: #3c6255;
+  color: #fff;
+  font-size: 2rem;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Playfair Display", serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #3c6255;
+  margin: 0.5rem 0 0.3rem;
+}
+
+.id {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+.info p {
+  text-align: left;
+  color: #333;
+  margin: 0.6rem 0 0.6rem 9rem;
+  font-size: 1rem;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-top: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+input {
+  width: 90%;
+  padding: 0.6rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  margin-top: 0.3rem;
+}
+
+.actions {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.btn {
+  background-color: #3c6255;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5c8374;
+}
+
+.btn.cancel {
+  background-color: #a6bb8d;
+  color: #333;
+}
+
+.btn.cancel:hover {
+  background-color: #8aa975;
+}
+
+.message {
+  margin-top: 1rem;
+  display: none;
+  font-weight: 600;
+}
+
+.message.success {
+  color: #3c6255;
+}
+
+.message.error {
+  color: #c0392b;
+}
+
+@media (max-width: 768px) {
+  .profile-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .info p {
+    margin: 0.6rem 0 0.6rem 1.2rem;
+  }
+}
